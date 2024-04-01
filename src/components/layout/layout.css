@@ -1,0 +1,35 @@
+.image-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change text color */
+  font-size: 2rem; /* Change font size */
+  font-weight: bold; /* Change font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.image-container img {
+  max-width: 100%; /* Set maximum width to 100% of container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlayList1 {
+  top: 40%;
+}
+
+.overlayList2 {
+  top: 50%;
+}
+
+.overlayList3 {
+  top: 60%;
+}
+
+.vstack a {
+  text-decoration: none;
+}
