@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
+import ProductComponent from "../../components/ProductComponent/ProductComponent";
 
 const Electronics = () => {
   const [elecData, setElecData] = useState([]);
@@ -26,16 +27,13 @@ const Electronics = () => {
       ) : (
         elecData
           .filter((product) => product.category === "electronics")
-          .map((item) => (
-            <div className="card" key={item.id} style={{ width: "18rem" }}>
-              <img src={item.image} className="card-img-top" alt="" />
-              <div className="card-body">
-                <p className="card-text">{item.title}</p>
-                <button type="button" className="btn btn-secondary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+          .map((product) => (
+            <ProductComponent
+              key={product.id}
+              id={product.id}
+              image={product.image}
+              title={product.title}
+            />
           ))
       )}
     </>

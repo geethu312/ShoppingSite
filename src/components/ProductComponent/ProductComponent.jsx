@@ -9,7 +9,7 @@ function ProductComponent(props) {
   return (
     <>
       <div
-        className="card"
+        className="card "
         onClick={onClick}
         id={props.id}
         style={{ width: "18rem" }}

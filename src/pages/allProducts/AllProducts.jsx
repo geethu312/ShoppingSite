@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ProductComponent from "../../components/productComponent";
-import "./allproducts.css";
+import ProductComponent from "../../components/ProductComponent/ProductComponent";
+import "./AllProducts.css";
 import { MoonLoader } from "react-spinners";
 
 const AllProducts = () => {

@@ -32,7 +32,7 @@ const SingleProduct = () => {
       ) : (
         <div
           className="card"
-          style={{ width: "800px", height: "500px", margin: "0 auto" }}
+          style={{ width: "800px", height: "700px", margin: "0 auto" }}
         >
           <img
             style={{ width: "200px", margin: "0 auto" }}
@@ -43,7 +43,7 @@ const SingleProduct = () => {
           <div className="card-body">
             <h1>{singleData.title}</h1>
             <p className="card-text">{singleData.description}</p>
-            <button type="button" class="btn btn-secondary">
+            <button type="button" className="btn btn-secondary">
               Add to Cart
             </button>
           </div>

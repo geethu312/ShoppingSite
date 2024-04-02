@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Stack from "react-bootstrap/Stack";
 import { Link } from "react-router-dom";
-import "./layout.css";
+import "./Layout.css";
 
 function ShopLayout() {
   return (

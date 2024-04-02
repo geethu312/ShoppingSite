@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { MoonLoader } from "react-spinners";
-import "./mens.css";
+import "./Mens.css";
+import ProductComponent from "../../components/ProductComponent/ProductComponent";
 
 export default function Mens() {
   const [mensData, setMensData] = useState([]);
@@ -32,15 +33,12 @@ export default function Mens() {
         mensData
           .filter((product) => product.category === "men's clothing")
           .map((product) => (
-            <div className="card" key={product.id} style={{ width: "18rem" }}>
-              <img src={product.image} className="card-img-top" alt="" />
-              <div className="card-body">
-                <p className="card-text">{product.title}</p>
-                <button type="button" className="btn btn-secondary">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+            <ProductComponent
+              key={product.id}
+              id={product.id}
+              image={product.image}
+              title={product.title}
+            />
           ))
       )}
     </>
